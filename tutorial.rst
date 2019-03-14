@@ -1,31 +1,36 @@
 ========================================================
-Tutorial: multilingual publications and bibliographies
+多言語出版物と文献目録
 ========================================================
 
 .. include:: substitutions.txt
-|CCBYSA|_ `Jonathan Lewis <http://www.soc.hit-u.ac.jp/en/academics/faculty/lewis.html>`_
+|CCBYSA|_ `ジョナサン・ルイス <http://www.soc.hit-u.ac.jp/en/academics/faculty/lewis.html>`_
+|CCBYSA|_ 豊崎玲子
 
-~~~~~~~~~~~~
-Introduction
-~~~~~~~~~~~~
+~~~~~~~~~~~~~~~
+イントロダクション
+~~~~~~~~~~~~~~~
 
-NOTE: This tutorial uses the latest Beta version of Jurism, released in March 2019.
+注記：
+このチュートリアルは、2019年３月にリリースされたJurisｍの最新ベータバージョンを使用しています。
 
-You are a social scientist (or a humanities scholar, or some other kind of researcher). You read and cite previous research written in two or more languages, and you need a way to record and manage all those references. You write articles in both English and another language.
+あなたが社会科学者（あるいは人文学学者、あるいはその他の研究者）であれば、複数の言語で書かれた先行研究を読んだとき、これらのすべての参考文献を記録し管理する方法が必要になります。また英語と他の言語で論文を書くこともあるでしょう。
 
-Each journal has its own requirements about how to format bibliographies. For example, when you cite a Japanese work in an English article you may have to write the author, title and so on in roman characters and add an English translation of the title, but when you cite the same work in a Japanese article you will just use the original information.  With Jurism you can store all the data necessary to produce these different citation formats in one place. This means you can maintain one database of all your citations and keep all information about each work together, regardless of which language that information is in. Even better, you can use Jurism to automatically generate bibliographies in the format required by whichever journal you are writing for, whichever language you are writing in (either by choosing from one of the styles supplied with Jurism, or writing your own.)
+各ジャーナルには、それぞれ、文献目録の書式に関する独自の要件があります。たとえば、あなたが英語の論文の中に、日本語の文献を引用するとき、著者名、題名その他を欧文字で書き、且つ題名の英訳をつけくわけなければなりません。しかし、日本語の論文の中で同じ日本語の文献を引用するときにはオリジナル情報のみで足ります。Jurismを使うと、引用書式を作成するために必要なすべての情報を一元管理でき、異なる引用書式を作成することができます。つまり、あなたは、言語や情報の種類に関わらず、全引用文献を一つのデータベースで管理し、各論文の全情報を一元に管理することができるのです。さらによいことには、Jurismは、あなたが書いているジャーナルの書式要件に沿った文献目録を、言語が何であれ、自動的に生成してくれます。
 
-In this tutorial we will imagine we are doing research on Japanese whaling; we collect information on the subject in English and Japanese, and write two articles, one in English and one in Japanese.
+このチュートリアルでは、日本の捕鯨に関する研究を行っていることを想定します。日本語と英語で関連する情報を収集し、英語と日本語による２本の論文を書くことを想定します。
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Setting up Jurism to store multilingual information
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+多言語情報を保管するためのJurismの設定
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-If we want to cite a Japanese work in an English article we will need to write the title, author etc. in roman characters rather than kanji and kana. Similarly, if we are writing an article in Japanese and the bibliography must be sorted according to the kana reading of the authors' names, we need to add the yomikata of the authors' names to our database.
+英語の論文の中で日本語の文献を引用するときは、題名、著者名などを漢字やかなではなく、欧文字で記載する必要があります。同時に、日本語の論文を作成する際、文献目録は、著者名の読みがなの順でソートしなければなりません。
 
-In order to do these things we add entries for English, Japanese, romaji and kana to Jurism's language preferences, as the following video shows. After opening Jurism's Preferences in the menu we click the Languages tab. Then we click *Add a Language* and add *English*; we change the nickname from *en* to *English* (the nickname can be anything you like; you can leave it as *en* if you prefer). Next we add *Japanese* in the same way. After that we click the Plus sign next to Japanese and from the *Variant* sub-menu we select *ALA-RC Romanization, 1997 Edition*. We change the nickname from *ja-alalc97* to *Romaji*. Finally we once again click the Plus sign next to Japanese and from the *script* sub-menu we select *Japanese syllabaries (alias for Hiragana + Katakana) -- Hrkt*. We change the nickname from *ja-Hrkt* to *Kana*.
+これらのため、Jurisｍの言語選択に英語、日本語、ローマ字およびカナを入力箇所として設ける必要があります。以下のビデオを参照してください。
+メニューの中のJurisｍの言語選択を開いたら「Languages」タブをクリックします。そして、「Language」の追加をクリックし、「English」を追加します。略称を「en」から「English」 に変更します。(略称の設定は、ご自身の好みで設定できます。「en」のままでもOKです)。
+つぎに、おなじ要領で「Japanese」を追加します。「Japanese」のよこにある「Plus」をクリックし、サブメニューの中から、「ALA-RC　Romanization, 1997 Edition」を選択します。これについても略称を「ja-alalc97」から「Romaji」に変更します。最後に、「Japanese」のよこの「＋」をクリックし、サブメニューから「Japanese syllabaries (alias for Hiragana + Katakana) – Hrkt」を選択します。これについても、略称を「ja-Hrkt」 から「Kana」に変更しておきます。
 
-We only have to do these settings once; they are good for as long as we use Jurism. And even if we delete a language from these settings, we won't lose any data about our collected items.
+以上の設定は一度きりの作業です。
+Jurisｍを使用しているかぎり、キープされます。たとえ、これらの設定からひとつの言語を削除しても、収集した項目のデータが消えることはありません。
 
 .. raw:: html
 
@@ -34,12 +39,14 @@ We only have to do these settings once; they are good for as long as we use Juri
     </div>
 
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Getting bibliographic information into Jurism
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+文献目録情報をJurismに取り込む
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+Jurismの強みの一つは、ウェブブラウザ―から、文献目録情報を認識し、ウェブページに含まれている文献目録情報を持ってくることができる点です。
 
-One of Jurism's great strengths is its ability to work with our web browser to recognize and grab bibliographic information contained in web pages. The following video shows us creating a new collection in Jurism, then adding four whaling-related items. We'll search CiNii for items about whaling and add a Japanese article by Morishita, go to Japanese Amazon to find information about Dolin's book in English, then to Google Scholar for one of Blok's articles in English, and finally back to Japanese Amazon to get details of Akamaine's Japanese book. Notice how the items get added to the currently selected collection in Jurism.
+以下のビデオはJurismの中に、新しい文献を集め、４つの捕鯨に関する文献を追加する場面を示しています。捕鯨に関する情報CiNiiサーチにて、捕鯨に関する項目をサーチし、森下による日本の論文を追加します。日本のアマゾンのページにて、Dolinの英文書籍情報を見つけました。さらに、GoogleScholarで、Blokの英文記事を確認しました。最後に、日本のアマゾンにもどって、赤嶺の日本語書籍をみつけました。Jurisｍにこれらの選択した収集情報をどのように追加するのか、注目してください。
+
 
 .. raw:: html
 
@@ -48,24 +55,27 @@ One of Jurism's great strengths is its ability to work with our web browser to r
     </div>
 	
 
-We can manage all our references in Jurism by creating folders and adding tags. The same item can be put into multiple folders. We can also attach links to PDF files. For further information see the "Using Zotero" section of the `Zotero documentation <https://www.zotero.org/support/>`_ .
+フォルダーを生成し、タグを追加することで、すべての参考文献をJurismにて管理することができます。同じ項目は、マルチフォルダーの中に入れることができます。PDFのリンクを追加することもできます。詳細については、 `Zotero documentation <https://www.zotero.org/support/>`_ の「Using Zotero」を参照してください。
 
-As you have probably already realized, the first and most important principle for storing information in Jurism is that item metadata should always be recorded in the original language in the first instance. Translations and transliterations can be entered later as they are needed; but the purpose of a citation is to lead the reader or the researcher back to the original source. If the title of a document in Russian, Khmer, Laotian or Japanese is entered as an English translation, data is lost---the reader is forced to guess at the original title if they want to find the original document. Therefore, all item metadata (except for dates) should be recorded in the original language. The variants can be added separately at a later time.
+既にお気づきでしょうが、Jurismに情報を保管するための第一かつもっとも重要な原則は、メタデータは常に、第一にまずオリジナルの言語で記録する、ということです。翻訳や音訳は必要に応じて後から入力することができます。しかし、引用の目的は読者あるいは研究者に原文を辿れるようにすることにあります。英語の翻訳として、ロシア語、クメール、ラオ後あるいは日本語で題名が記載されていたら、原文を探したいと思う読者は、原文のタイトルを想像するよりありません、そして、データが見つからない事態に。したがって、すべてのメタデータ（日付を除き）は。原文の言語で記録されるべきです。異なる言語は、後日、別に追加することができるのです。
 
+~~~~~~~~~~~~~~~~~~~~~~~
+英語論文の中での多言語の引用
+~~~~~~~~~~~~~~~~~~~~~~~
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Multilingual citations in an English article
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ここに、「Journal of Asian Studies」へ提出するための現行を用意しました。このジャーナルの `information page <https://www.cambridge.org/core/journals/journal-of-asian-studies/information/instructions-contributors>`_ には、シカゴマニュアル様式16版に従うようにという指示があります。
 
-We're preparing a manuscript for submission to the *Journal of Asian Studies*. The Journal's `information page <https://www.cambridge.org/core/journals/journal-of-asian-studies/information/instructions-contributors>`_ tells us to follow the *Chicago Manual of Style*, 16th edition.
-
-Looking at the sample article on the journal's web page, we see that non-English works are written as follows in the bibliography:
+ジャーナルのウェブページ上にある事例を参照しますと、非英語の論文は下記の書誌に基づいて書かれています。
 
 BAN CHẤP HÀNH ĐẢNG BỘ TỈNH BẠC LIÊU. 2002. *Lịch sử Đảng bộ tỉnh Bạc Liêu (1927– 1975)* [History of the party in Bạc Liêu Province]. Vol. 1. Bạc Liêu: Ban Thường Vụ Tỉnh Ủy.
 
-So we need to render all Japanese text in roman characters and add an English translation of titles in square brackets.
+したがって、すべての日本語文献は、ローマ字で表現し、タイトルの英訳を大括弧で記載する必要があります。
 
-We want to quote the Japanese article by Morishita and the book by Akamine in our article. At the moment we only have the titles, authors etc. in kanji/kana so we need to add roman transliterations of these, plus an English translation of the title of Akamine's book. First we have to tell Jurism which language each item is in. We do this by writing the two-letter language code (*ja*, *en* etc.) in the language field. NOTE: we have to use the two-letter language code and not the name of the language (*English*, *日本語* etc.) So if the language field has already been set to the name of a language you will need to change it to the two-letter code. Next we right-click the label next to each relevant field, choose *Add Variant*, and enter the transliteration into roman characters and then an English translation of the item.
+森下による日本語文献と、赤嶺の書籍を、論文の中で引用します。現段階では、私たちは、題名、著作者名情報を漢字/かなでしかもっていませんので、これらをローマ字に音訳する必要があります。さらに、赤嶺の書籍は題名を英語に翻訳しなければなりません。まず、Jurism上にて、各文献がどの言語であるかを記録しなければなりません。言語に関する情報は2文字言語コード（ja, enなど）を用いて、言語フィールドの中に記載します。
+
+注記：ここで使えるのは２文字言語コードであり、（英語、日本語などの）言語名を使用することはできません。そのため、もし、言語フィールドに言語名で設定していたならば、２文字コードに変更しなければなりません。
+
+つぎに、各関連フィールドのラベルを右クリックし、「Add Variant」を選択し、文献のローマ字による音訳および英語の翻訳を記載します。
 
 .. raw:: html
 
@@ -74,64 +84,67 @@ We want to quote the Japanese article by Morishita and the book by Akamine in ou
     </div>
 
 
-When we are ready to start citing works in our article, we set up Jurism's language preferences as follows:
+自分の論文で、引用する準備ができたら、Jurismの言語選択（language preference）は以下となっているはずです。
 
 .. image:: ./media/LanguagePrefsForEnglishArticle.png
 
-(I have German and French in my settings because I have cited works in those languages elsewhere.)
+（私は過去にドイツ語とフランス語文献を引用したため、わたしの設定にはドイツ語とフランス語がはいっています）
 
-The settings in the top half of the table tell Jurism to use the "script" version of the primary language, which in this case means Japanese is rendered in roman characters. Also, titles of Japanese works will have an English translation added in square brackets.
+この設定画面の上部のテーブルは、原文言語の「スクリプト」を使用することを示しています。このケースでは日本語はローマ字で表されます。さらに、日本語文献のタイトルは、英語に翻訳されたものを追加するため、［］に印が追加されています。
 
-The settings in the bottom half of the table tell Jurism how to sort the bibliography; Japanese works will be sorted according to the romanized version of the author name.
+この設定画面の下半分のテーブルは、Jurismが文献目録をどのような順序でソートするかを示すものです。日本語文献は、著者名のローマ字順にソートされることになります。
 
-Now we can go ahead and add citations and a bibliography to our English article. Remember to set Jurism's language preferences before adding the first citation; it should be possible to change the preferences afterwards but it will save confusion if we get things right from the beginning. When we add the first citation to a document, Jurism's language preferences at that moment are copied to the document, so we can subsequently change the language settings in Jurism without affecting the formatting of the bibliography in Word.
-
-When we add a citation to our Word document a red-bordered search box is displayed. If we write English author names or keywords ("Blok", "Leviathan" etc.) then items in our Jurism database are immediately displayed and we can choose the one we want. If we write Japanese text ("赤嶺","捕鯨" etc.) then we need to write a space after the word in order to get the candidate items to display. If we can't remember the author or keyword we can click the Jurism icon, then "Classic View", and then select the item we want to cite.
+では、次に進んで、英語論文への引用追加と文献目録にいきましょう。最初の引用を追加する前にJurismの言語設定をチェックすることをわすれないでください。設定は後から変更することから可能であるとしても、最初から設定しておくことで混乱を防ぐことができます。最初に引用を論文に追加するとき、その時点でのJurismの言語設定が論文にコピーされます。したがってWordの中での文献目録の書式に影響を及ぼさずに、Jurismの言語設定を後に変更することができます。
 
 .. raw:: html
 
     <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
-        <iframe src="https://www.youtube.com/embed/M3IIGbCBBkU" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+        <iframe src="https://www.youtube.com/embed/7lcx3gohTyw" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
     </div>
 
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Multilingual citations in a Japanese article
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~
+日本語の論文における多言語引用
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Our second article on whaling is in Japanese, for submission to the *Japanese Sociological Review*. The journal has a detailed `style guide <http://www.gakkai.ne.jp/jss/bulletin/guide.php>`_. Jurism has implemented this style so, as long as we have the right information in the appropriate fields, we can simply add citations throughout our article and let Jurism do the work of compiling a properly formatted bibliography.
+次に取り上げるのは、「Japanese Sociological Review (日本社会学会)」誌のための日本語による捕鯨の論文です。この学会誌には、詳細な様式ガイド `style guide <http://www.gakkai.ne.jp/jss/bulletin/guide.php>`_ があります。Jurismはこの様式を改良し、正しい情報を適切なフィールドに入力しているかぎり、簡単に、引用を自分の論文の中に追加するだけで、Jurismには適切な様式の文献目録のための収集作業を行せることができます。
 
-We will quote the same four sources as we did in the English article.  We already have an entry for each item in Jurism so can get on with the writing and citing. However, we know Dolin's book has been translated into Japanese and we want to cite the translation. So we set the item's Language field to "en>ja" and put information about the translation into the item's Extra field as shown below. Note that each translator gets a separate <alt-translator> entry, and that the translators' family and given names are divided by double bar characters "||".
+ここで、英語の論文で用いたものと同じ４つのソースを引用します。すでに各文献は、Jurismの中に取り込まれていますので、それを引用し、記述することができます。なお私たちは、Dolinの書籍を日本語に翻訳されていることを知っていますし、その翻訳を使いたいところです。そこで、下記に示すように、この文献の言語フィールドを“en>ja”とし、この文献の追加フィールドの中に、翻訳情報を入力します。
+各翻訳者はそれぞれ<alt-translator>に入力します。さらに翻訳者の姓名は、複縦線“||”によって分けて入力します。
 
 .. image:: ./media/AddingTranslationInfo.png
 
-Before we start adding citations to our article in Word, we need to set up Jurism's language preferences again. The settings in the top half of the preferences become very simple because we don't need to transliterate Japanese text or add English translations. The settings in the bottom half are the same as we used for the English article. This is because the journal's style guide says that all works (in whichever language) have to be sorted by the romanized version of the author's name. Of course, this means we need to add the romanized version of the author/editor information for every Japanese work we cite, even though the roman characters won't be displayed.
+Wordで記載する論文に引用文献を追加し始める前に、私たちは、Juirismの言語選択を再び設定する必要があります。日本語の文書に翻訳する必要も英語の翻訳も加える必要がないので、この上部の設定はとても簡単です。これは、学会の様式ガイドラインが、すべての文献は（どんな言語であれ）著者名のローマ字順であることを求めているからです。他方、これは、たとえ、引用する文献の著者/編者名のローマ字表記が表示されていなくとも、引用しようとする文献の著者/編集者のローマ字表記を入力しなければならないということを意味します。
 
 .. image:: ./media/LangPrefsForJapaneseArticle.png
 
-Now it's time to add citations and a bibliography to our article.
+この段階で、自身の論文に引用文献と文献目録を追加します。Wordに引用文献を追加する際、ローマ字を使用した文献を探すようにと、（“Blok”, ”Leviathan”など）赤枠のウインドウが表れますが、諸理由から、日本語のテキストの場合には現れません。日本語の論文に引用文献を挿入する際には、Jurism　アイコンをクリックし、”Classic View”を出し、引用したい文献を選択する必要があります。
 
 .. raw:: html
 
     <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
-        <iframe src="https://www.youtube.com/embed/RgSr0L8TPM0" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+        <iframe src="https://www.youtube.com/embed/HFsRLQIDjN4" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
     </div>
 
 
-Jurism formats the bibliography exactly as the journal's editors want it; it even formats complex entries such as translations and republications. In order to understand how to get those more complex items to display correctly, please check out this `shared library <https://www.zotero.org/groups/2295917/japan_sociological_society_examples?>`_. The library contains all the different items and variations mentioned in the journal's style guide.
+Jurismは、学会編集の要求する様式が、翻訳や再刊などのような複雑な入力を様式化していたとしても、正確にその要求に従って様式化します。より複雑な項目を正しく表示する方法について理解するためには、この `shared library <https://www.zotero.org/groups/2295917/japan_sociological_society_examples?>`_ を参照してください。このライブラリには、ジャーナルの様式ガイドの中に示されている異なる事項やバリエーションが含まれています。
 
-You might be thinking: "Ah, but now I've added information about the translation of Dolin's book, the next time I cite it in an English article the Japanese translation will get cited." Fear not: Jurism will detect from the style settings that you are writing for an English journal and will only provide details of the original book.
+ここで、あなたはこう思うかもしれません。「あっ、でも今、Dolisの書籍の翻訳についての情報を追加した。次回、英語の論文で、日本語翻訳版を引用するし」と。大丈夫。Jurismはあなたが英文ジャーナルのために記載している様式設定の中から、見つけ出し、原書の詳細のみを提供します。
 
 ------------
 
-(Actually, there is one instruction in the JSR style guide that Jurism can't deal with. That's the case of a co-written work where at least one of the authors writes their name in katakana. In such cases the characters separating the authors' names are supposed to change from ・ to ／. So for example
+（実際のところ、JSR様式ガイドの中には、Jurismでは対処できない些細だけれども頭を悩ませる指示が一つあります。共著作品で、少なくとも一人の著作者名がカナで表示される場合です。この場合には、著者名を区切る中黒（・）をスラッシュに(/)に代えるしかありません。
+
+例
+
+カナで表示される著作者がいない場合：
 
 宮島喬・梶田孝道・伊藤るり，1985，『先進社会のジレンマ』有斐閣．
 
-But
+カナで表示される著作者がいる場合：
 
 西垣通／ジョナサン・ルイス，2001，『インターネットで日本語はどうなるか』岩波書店．
 
-If you are citing such works, I'm afraid you will have to edit the bibliography manually before submission.)
+もし、このような文献を引用する際には、文献目録を提出前に手入力で編集しなければなりません。)
 
-If you have any questions please email the `Jurism-support <https://mail.law.nagoya-u.ac.jp/mailman/listinfo/jurism-support>`_ or `Jurism-freshers <https://mail.law.nagoya-u.ac.jp/mailman/listinfo/jurism-freshers>`_ email lists.
+もしわからない点があれば、`Jurism-support <https://mail.law.nagoya-u.ac.jp/mailman/listinfo/jurism-support>`_ 又は `Jurism-freshers <https://mail.law.nagoya-u.ac.jp/mailman/listinfo/jurism-freshers>`_ にメールしてください。

@@ -21,7 +21,4 @@ Table of Contents
    :maxdepth: 4
 
    introduction.rst
-   news/index.rst
    tutorial.rst
-   tutorial-ja.rst
-   jurism-extras.rst
